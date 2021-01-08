@@ -56,6 +56,12 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "en": {
+              "localize": ["en"]
+            },
+            "es": {
+              "localize": ["es"]
             }
           }
         },
@@ -67,6 +73,12 @@
           "configurations": {
             "production": {
               "browserTarget": "translateMe:build:production"
+            },
+            "en": {
+             "browserTarget": "translateMe:build:en" 
+            },
+            "es": {
+              "browserTarget": "translateMe:build:es"
             }
           }
         },
@@ -117,6 +129,12 @@
               "devServerTarget": "translateMe:serve:production"
             }
           }
+        }
+      },
+      "i18n": {
+        "locales": {
+          "en": "src/i18n/messages.xlf",
+          "es": "src/i18n/messages.es.xlf"
         }
       }
     }},
