@@ -1,6 +1,6 @@
-<h1 i18n="@@header">Angular localization tutorial</h1>
+<h1>{{ 'header' | translate }}</h1>
 
-<p i18n="@@body">This is a text that we want to translate</p>
-<p i18n="@@bodyWithNumber">And here is a text with the number {{ variableNumber }} in it.</p>
+<p>{{ 'body' | translate }}</p>
+<p>{{ 'bodyWithVariable' | translate:variableNumber }}</p>
 
 <app-language-picker></app-language-picker>

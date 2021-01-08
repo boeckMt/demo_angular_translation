@@ -1,0 +1,7 @@
+{
+    "header": "Tutorial de localización angular",
+    "body": "Este es un texto que queremos traducir.",
+    "bodyWithVariable": "Y aquí hay un texto con el número {{ nr }} en él.",
+    "English": "Ingles",
+    "Spanish": "Español"
+}

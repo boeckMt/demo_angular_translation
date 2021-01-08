@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-language-picker',
   templateUrl: './language-picker.component.html',
   styleUrls: ['./language-picker.component.css']
 })
-export class LanguagePickerComponent implements OnInit {
+export class LanguagePickerComponent {
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
-  ngOnInit(): void {
+  useLang(langCode: string) {
+    this.translate.use(langCode);
   }
 
 }

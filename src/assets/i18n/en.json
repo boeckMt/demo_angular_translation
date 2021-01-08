@@ -1,0 +1,7 @@
+{
+    "header": "Angular localization tutorial",
+    "body": "This is a text that we want to translate",
+    "bodyWithVariable": "And here is a text with the number {{ nr }} in it.",
+    "English": "English",
+    "Spanish": "Spanish"
+}

@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'translateMe';
-  variableNumber = 42;
+  variableNumber = {nr: 42};
 }
