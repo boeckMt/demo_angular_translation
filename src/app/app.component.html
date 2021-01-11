@@ -59,5 +59,21 @@
 
 <p i18n="@@paragraphInAppTemplate">Hello i18n!</p>
 <h4 i18n="An introduction header for this sample@@introductionHeader1">Use a custom ID with a description</h4>
-<h4 i18n="site header|An introduction header for this sample@@introductionHeader2">Use a custom ID with a description and
+<h4 i18n="site header|An introduction header for this sample@@introductionHeader2">Use a custom ID with a description
+  and
   meaning</h4>
+
+
+<hr>
+
+<h3><a href="https://angular.io/guide/i18n#format-data-based-on-locale">Using Pipes</a></h3>
+
+<p i18n>Today is {{today | date}}</p>
+
+<p i18n>I'm the Number {{decimalNumber | number}}</p>
+
+<p i18n>This APP costs {{price|currency:'EUR':'symbol'}}</p>
+
+<p i18n>Formatted number in script file {{formatedNumber}} and {{formatedNumberWhithDecimalPipe}}</p>
+
+<p i18n>I'm using the PercentPipe {{percentNumber | percent}}</p>

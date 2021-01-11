@@ -6,7 +6,7 @@
         <source> translateMe-App</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
-          <context context-type="linenumber">9</context>
+          <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="06dd568f5dba545d17ce1df32a27ac15e56fb267" datatype="html">
@@ -111,7 +111,12 @@
         </context-group>
       </trans-unit>
       <trans-unit id="972cb0cf3e442f7b1c00d7dab168ac08d6bdf20c" datatype="html">
-        <source>Updated: <x id="ICU" equiv-text="{minutes, plural, =0 {just now} =1 {one minute ago} other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}"/></source>
+        <source>Updated: <x id="ICU" equiv-text="{minutes, plural,
+  =0 {just now}
+  =1 {one minute ago}
+  other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}
+"/>
+</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">49,53</context>
@@ -136,10 +141,45 @@
         <source>Use a custom ID with a description and meaning</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">62,63</context>
+          <context context-type="linenumber">62,64</context>
         </context-group>
         <note priority="1" from="description">An introduction header for this sample</note>
         <note priority="1" from="meaning">site header</note>
+      </trans-unit>
+      <trans-unit id="7d51bdab3ba69a0326c16b5c5eb9403022bad2b4" datatype="html">
+        <source>Today is <x id="INTERPOLATION" equiv-text="{{today | date}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0e39b85137445a7a84eafeeb561b3b7a4914881d" datatype="html">
+        <source>I&apos;m the Number <x id="INTERPOLATION" equiv-text="{{decimalNumber | number}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0d1b93c03bc1c1a44b6515fa0af062bb69769589" datatype="html">
+        <source>This APP costs <x id="INTERPOLATION" equiv-text="{{price|currency:&apos;EUR&apos;:&apos;symbol&apos;}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7c2c2d3552b1c8956e3af94f61682c45459ab19" datatype="html">
+        <source>Formatted number in script file <x id="INTERPOLATION" equiv-text="{{formatedNumber}}"/> and <x id="INTERPOLATION_1" equiv-text="{{formatedNumberWhithDecimalPipe}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fecc63006fdf2a34906c0eeeaf3009072270b6ca" datatype="html">
+        <source>I&apos;m using the PercentPipe <x id="INTERPOLATION" equiv-text="{{percentNumber | percent}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
       </trans-unit>
     </body>
   </file>
