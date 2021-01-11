@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.2"
-  xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="de-DE">
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="de">
     <body>
-      <trans-unit id="91fd10d96c2f285a4574fa616f6149ba13994709" datatype="html">
-        <source>I'm a translated app</source>
-        <target>Ich bin eine übersetzte App</target>
+      <trans-unit id="app.title" datatype="html">
+        <source> translateMe-App</source>
+        <target> ÜbersetsMich-App</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="06dd568f5dba545d17ce1df32a27ac15e56fb267" datatype="html">
+        <source>I'm a translated app with the name <x id="INTERPOLATION" equiv-text="{{title}}"/></source>
+        <target>Ich bin eine übersetzte App mit dem Namen <x id="INTERPOLATION" equiv-text="{{title}}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">2</context>
@@ -22,7 +29,6 @@
       <trans-unit id="e787d6aa0193d1d190aaff554a21db27ccdc3edc" datatype="html">
         <source>I18n is a custom attribute, recognized by Angular tools and compilers. After translation, the compiler removes it. It is not an Angular directive.</source>
         <target>I18n ist ein benutzerdefiniertes Attribut, das von Angular-Tools und -Compilern erkannt wird. Nach der Übersetzung entfernt der Compiler sie. Es ist keine Angular-Direktive.</target>
-        <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">7,9</context>
@@ -31,10 +37,9 @@
       <trans-unit id="7b01ce9108fbaa4816320ab84e57ea144a9956f4" datatype="html">
         <source>Add helpful descriptions and meanings as the value of the i18n attribute</source>
         <target>Fügen Sie hilfreiche Beschreibungen und Bedeutungen als Wert des i18n-Attributs hinzu</target>
-        <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">14,15</context>
+          <context context-type="linenumber">15,16</context>
         </context-group>
         <note priority="1" from="description">An introduction header for this sample</note>
       </trans-unit>
@@ -43,7 +48,7 @@
         <target>Hallo i18n!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">18</context>
         </context-group>
         <note priority="1" from="description">An introduction header for this sample</note>
         <note priority="1" from="meaning">site header</note>
@@ -53,7 +58,7 @@
         <target>Ich gebe kein Element aus</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="701174153757adf13e7c24a248c8a873ac9f5193" datatype="html">
@@ -61,7 +66,7 @@
         <target>Angular Bild</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ac1689bcc32b27878dff4582564b72c790789a25" datatype="html">
@@ -69,67 +74,94 @@
         <target>Ich bin ein Titel</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a362ed8e0ef7c7d5ac5f15d6c46c62f989e74b59" datatype="html">
+        <source>Text with a title attribute</source>
+        <target>Text mit einem Titelattribut</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5a134dee893586d02bffc9611056b9cadf9abfad" datatype="html">
-        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/>
- minutes ago}}</source>
-        <target>{VAR_PLURAL, plural, =0 {grade eben} =1 {vor einer Minute} andere {il y a <x id="INTERPOLATION" equiv-text="{{minutes}}"/>
- minuten vorher} }</target>
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago}}</source>
+        <target>{VAR_PLURAL, plural, =0 {grade eben} =1 {vor einer Minute} andere {il y a <x id="INTERPOLATION" equiv-text="{{minutes}}"/>minuten vorher} }</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d69f6b42305f49332026fef24b40227f02e34594" datatype="html">
-        <source>Updated <x id="ICU" equiv-text="{minutes, plural, =0 {just now} =1 {one minute ago} other {{{minutes}} minutes ago}}"/>
-        </source>
+        <source>Updated <x id="ICU" equiv-text="{minutes, plural, =0 {just now} =1 {one minute ago} other {{{minutes}} minutes ago}}"/></source>
         <target>Updated <x id="ICU" equiv-text="{minuten, plural, =0 {...} =1 {...} other {...}}"/>
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="eff74b75ab7364b6fa888f1cbfae901aaaf02295" datatype="html">
         <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
         <target state="needs-adaptation">{VAR_SELECT, select, male {ein Mann} female {eine Frau} other {anderst} }</target>
-        <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f99f34ac9bd4606345071bd813858dec29f3b7d1" datatype="html">
-        <source>The author is <x id="ICU" equiv-text="{gender, select, male {male} female {female} other {other}}"/>
-        </source>
+        <source>The author is <x id="ICU" equiv-text="{gender, select, male {male} female {female} other {other}}"/></source>
         <target>Der Author ist <x id="ICU" equiv-text="{gender, select, male {...} weiblich {...} anderst {...}}"/>
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7151c2e67748b726f0864fc443861d45df21d706" datatype="html">
-        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/>
- minutes ago by {VAR_SELECT, select, male {male} female {female} other {other}}}}</source>
-        <target>{VAR_PLURAL, plural, =0 {gerade eben} =1 {eine Minute vorher} anders {<x id="INTERPOLATION" equiv-text="{{minutes}}"/>
- minuten vorher {VAR_SELECT, select, male {male} female {female} other {other} }} }</target>
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago by {VAR_SELECT, select, male {male} female {female} other {other}}}}</source>
+        <target>{VAR_PLURAL, plural, =0 {gerade eben} =1 {eine Minute vorher} anders {<x id="INTERPOLATION" equiv-text="{{minutes}}"/>minuten vorher {VAR_SELECT, select, male {male} female {female} other {other} }} }</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">46,49</context>
+          <context context-type="linenumber">49,52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="972cb0cf3e442f7b1c00d7dab168ac08d6bdf20c" datatype="html">
-        <source>Updated: <x id="ICU" equiv-text="{minutes, plural,&#xA;  =0 {just now}&#xA;  =1 {one minute ago}&#xA;  other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}&#xA;"/>
-        </source>
+        <source>Updated: <x id="ICU" equiv-text="{minutes, plural,&#xA;  =0 {just now}&#xA;  =1 {one minute ago}&#xA;  other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}&#xA;"/></source>
         <target>Updated: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/>
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">46,50</context>
+          <context context-type="linenumber">49,53</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="paragraphInAppTemplate" datatype="html">
+        <source>Hello i18n!</source>
+        <target>Hallo i18n!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="introductionHeader1" datatype="html">
+        <source>Use a custom ID with a description</source>
+        <target>Verwenden Sie eine benutzerdefinierte ID mit einer Beschreibung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">An introduction header for this sample</note>
+      </trans-unit>
+      <trans-unit id="introductionHeader2" datatype="html">
+        <source>Use a custom ID with a description and meaning</source>
+        <target>Verwenden Sie eine benutzerdefinierte ID mit einer Beschreibung und Bedeutung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+        <note priority="1" from="description">An introduction header for this sample</note>
+        <note priority="1" from="meaning">site header</note>
       </trans-unit>
     </body>
   </file>

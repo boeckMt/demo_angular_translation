@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'translateMe';
+  title = $localize`:@@app.title: translateMe-App`;
   minutes = 1;
   gender = 'male';
 }

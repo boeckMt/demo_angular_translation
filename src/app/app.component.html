@@ -1,5 +1,5 @@
 <h3><a href="https://angular.io/guide/i18n#mark-text-for-translations">Mark text for translations</a></h3>
-<h1 i18n>I'm a translated app</h1>
+<h1 i18n>I'm a translated app with the name {{title}}</h1>
 
 <p i18n>I'm a translated Text in a template</p>
 
@@ -10,7 +10,8 @@
 
 <hr>
 
-<h3><a href="https://angular.io/guide/i18n#add-helpful-descriptions-and-meanings">Add helpful descriptions and meanings</a></h3>
+<h3><a href="https://angular.io/guide/i18n#add-helpful-descriptions-and-meanings">Add helpful descriptions and
+    meanings</a></h3>
 <h4 i18n="An introduction header for this sample">Add helpful descriptions and meanings as the value of the i18n
   attribute</h4>
 
@@ -24,10 +25,11 @@
 <hr>
 
 
-<h3><a href="https://angular.io/guide/i18n#mark-element-attributes-for-translations">Mark element attributes for translations</a></h3>
+<h3><a href="https://angular.io/guide/i18n#mark-element-attributes-for-translations">Mark element attributes for
+    translations</a></h3>
 <img src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png" i18n-title title="Angular logo" />
 
-<p i18n-title title="I'm a title">Text with a title attribute</p>
+<p i18n-title title="I'm a title" i18n>Text with a title attribute</p>
 
 <hr>
 
@@ -40,7 +42,8 @@
 <hr>
 
 
-<h3><a href="https://angular.io/guide/i18n#mark-alternates-and-nested-expressions">Mark alternates and nested expressions</a></h3>
+<h3><a href="https://angular.io/guide/i18n#mark-alternates-and-nested-expressions">Mark alternates and nested
+    expressions</a></h3>
 <p i18n>The author is {gender, select, male {male} female {female} other {other}}</p>
 
 <p i18n>Updated: {minutes, plural,
@@ -48,3 +51,13 @@
   =1 {one minute ago}
   other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}
 </p>
+
+
+
+<h3><a href="https://angular.io/guide/i18n#manage-marked-text-with-custom-ids">Manage marked text with custom unique
+    IDs</a></h3>
+
+<p i18n="@@paragraphInAppTemplate">Hello i18n!</p>
+<h4 i18n="An introduction header for this sample@@introductionHeader1">Use a custom ID with a description</h4>
+<h4 i18n="site header|An introduction header for this sample@@introductionHeader2">Use a custom ID with a description and
+  meaning</h4>
