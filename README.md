@@ -1,5 +1,26 @@
 # TranslateMe
 
+Check out the guide https://angular.io/guide/i18n
+
+1. Add the localize package `ng add @angular/localize`
+2. Adjust your app's source locale for the build by setting the source locale in the sourceLocale field in angular.json
+3. Define locales in the build configuration -> https://angular.io/guide/i18n#define-locales-in-the-build-configuration
+4. Use built-in data angular pipes DatePipe | CurrencyPipe | DecimalPipe | PercentPipe
+5. Mark templates for translations: [see app.component.html](src/app/app.component.html)
+6. Extract the source language file `ng xi18n --output-path=src/locale`
+
+
+7. USE XLIFF to manage transaltions https://marketplace.visualstudio.com/items?itemName=rvanbekkum.xliff-sync
+- 1. XLIFF: Create New Target File(s) (add file e.g. de-DE)
+- 2. XLIFF: Synchronize to Single File (when the file e.g. messages.de-DE.xlf is open )
+
+
+8. Serve localized `ng serve --configuration=de` //configuration is set in the angular.json from stepp 2 
+
+9. Build distributable files for each locale 
+(The build process replaces the original text with translated text, and sets the LOCALE_ID token for each distributable copy of the app. It also loads and registers the locale data)
+---
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
 ## Development server
