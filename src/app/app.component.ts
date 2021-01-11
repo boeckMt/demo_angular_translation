@@ -2,6 +2,8 @@ import { DecimalPipe } from '@angular/common';
 import { LOCALE_ID } from '@angular/core';
 import { Inject } from '@angular/core';
 import { Component } from '@angular/core';
+import { Router, Routes } from '@angular/router';
+import { routes } from './app-routing.module';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +21,9 @@ export class AppComponent {
   formatedNumber;
   formatedNumberWhithDecimalPipe;
 
-  constructor(@Inject(LOCALE_ID) public locale: string) {
+  routes: Routes = this.router.config.filter(r => r.data);
+
+  constructor(@Inject(LOCALE_ID) public locale: string, public router: Router) {
     const decimalPipe = new DecimalPipe(this.locale);
 
     this.formatedNumber = new Intl.NumberFormat('de', { style: 'currency', currency: 'EUR' }).format(this.decimalNumber);

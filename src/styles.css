@@ -9,3 +9,8 @@ h3 {
   text-transform: uppercase;
   color: rgb(0, 128, 202);
 }
+
+.route-view {
+  padding: 1rem;
+  background-color: grey;
+}

@@ -77,3 +77,15 @@
 <p i18n>Formatted number in script file {{formatedNumber}} and {{formatedNumberWhithDecimalPipe}}</p>
 
 <p i18n>I'm using the PercentPipe {{percentNumber | percent}}</p>
+
+
+<hr>
+<h3><a href="">Routing</a></h3>
+<ul>
+  <li *ngFor="let route of routes"><a routerLink="/{{route.path}}" routerLinkActive="active"
+      class="nav-link nav-text header-nav-el">{{ route.data.title }}</a></li>
+</ul>
+
+<div class="route-view">
+  <router-outlet></router-outlet>
+</div>
