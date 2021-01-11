@@ -7,7 +7,7 @@ Check out the guide https://angular.io/guide/i18n
 3. Define locales in the build configuration -> https://angular.io/guide/i18n#define-locales-in-the-build-configuration
 4. Use built-in data angular pipes DatePipe | CurrencyPipe | DecimalPipe | PercentPipe
 5. Mark templates for translations: [see app.component.html](src/app/app.component.html)
-6. Extract the source language file `ng xi18n --output-path=src/locale`
+6. Extract the source language file `ng extract-i18n --output-path=src/locale --ivy`
 
 
 7. USE XLIFF to manage transaltions https://marketplace.visualstudio.com/items?itemName=rvanbekkum.xliff-sync

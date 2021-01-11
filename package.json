@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "serve:localize": "ng serve --configuration=de",
-    "extract:localize": "ng xi18n --output-path=src/locale",
+    "extract:localize": "ng extract-i18n --output-path=src/locale --ivy",
     "build:localize": "ng build --configuration=production --localize"
   },
   "private": true,
