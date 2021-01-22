@@ -11,6 +11,7 @@ import { routes } from './app-routing.module';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // the custom ID is separated by ':' so it is possible to write $localize`:@@app.title Name: translateMe-App`; but $localize`:@@app.title: Name: translateMe-App`;
   title = $localize`:@@app.title: translateMe-App`;
   minutes = 1;
   gender = 'male';
